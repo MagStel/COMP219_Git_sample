@@ -1,8 +1,9 @@
 # test_code.py
 
-# Open and read data from the text file
-with open("sample_data1.txt", "r") as file:
-    data = file.read()
+def read_file(file_name):
+    with open(file_name, 'r') as file:
+        data = file.read()
+    return data
 
-# Display the data
-print(data)
+file_name = "sample_data1.txt"
+print(read_file(file_name))
